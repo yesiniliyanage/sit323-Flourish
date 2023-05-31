@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-flourish-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-flourish
+  template:
+    metadata:
+      labels:
+        app: my-flourish
+    spec:
+      containers:
+      - name: my-flourish
+        image: gcr.io/sit323-23t1-liyanage-1357599/my-flourish:latest
+        ports:
+        - containerPort: 3000

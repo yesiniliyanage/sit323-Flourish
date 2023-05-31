@@ -1,0 +1,12 @@
+steps:
+  # Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/sit323-23t1-liyanage-1357599/my-flourish', '.']
+  # Run unit tests
+  - name: 'gcr.io/sit323-23t1-liyanage-1357599/my-flourish'
+    args: ['npm', 'test']
+  # Any other necessary checks or steps
+
+images:
+  # Push the Docker image to Google Container Registry
+  - 'gcr.io/sit323-23t1-liyanage-1357599/my-flourish'
