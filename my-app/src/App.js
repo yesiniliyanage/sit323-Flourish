@@ -90,7 +90,7 @@ class App extends React.Component {
           <a href="www.google.com#">Gardening Tools</a>
           <a href="www.google.com#">Soil</a>
           <a href="www.google.com">Fertilizer</a>
-          <a href="www.google.com">Log in!</a>
+          <a href="www.google.com">Log in</a>
         </nav>
         <h1>Flourish - Your Plant and Gardening Tools Store</h1>
         <h2>Our featured items</h2>
